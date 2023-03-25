@@ -8,6 +8,7 @@ def main():
     options = webdriver.ChromeOptions()
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
     driver = webdriver.Chrome("./chromedriver", options=options)
+    driver.minimize_window()
 
     auth.auth_login(driver)
     grp_links = groups.extract_groups(driver)
