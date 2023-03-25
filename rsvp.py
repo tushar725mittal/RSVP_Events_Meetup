@@ -3,7 +3,7 @@ from utils import auth, events, attend, groups
 import sys
 
 
-# write main function
+# main function
 def main():
     options = webdriver.ChromeOptions()
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
